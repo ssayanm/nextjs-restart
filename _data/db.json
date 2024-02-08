@@ -22,25 +22,11 @@
       "user_email": "peach@netninja.dev"
     },
     {
-      "id": "2af6",
-      "title": "create a box",
-      "body": "green box",
-      "priority": "medium",
-      "user_email": "sayan@gmail.com"
-    },
-    {
-      "id": "5190",
-      "title": "test",
-      "body": "do proper testing",
-      "priority": "high",
-      "user_email": "sayan@gmail.com"
-    },
-    {
-      "id": "159c",
-      "title": "aa",
-      "body": "aa",
-      "priority": "low",
-      "user_email": "sayan@gmail.com"
+      "id": "4e6f",
+      "title": "testing",
+      "body": "lorem ip",
+      "user_email": "test@test.com",
+      "proority": "high"
     }
   ]
 }
