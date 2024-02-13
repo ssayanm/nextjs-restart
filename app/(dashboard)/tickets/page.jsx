@@ -10,20 +10,18 @@ export const metadata = {
 export default function page() {
   return (
     <main>
-      <div className="flex align-middle justify-between mx-1">
+      <nav>
         <div>
           <h2>Tickets</h2>
           <p>
             <small>Currently open tickets</small>
           </p>
         </div>
-        <div className="flex justify-center my-8">
-          <Link href="/tickets/create">
-            {" "}
-            <button className="btn-primary">Create a New Ticket</button>
-          </Link>
-        </div>
-      </div>
+
+        <Link href="/tickets/create" className="ml-auto">
+          <button className="btn-primary">Create a New Ticket</button>
+        </Link>
+      </nav>
       <Suspense fallback={<Loading />}>
         <TicketList />
       </Suspense>
