@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./spi-logo.png";
+import Logo from "./SpideLogo.png";
 import Image from "next/image";
 import LogoutButton from "./LogoutButton";
 

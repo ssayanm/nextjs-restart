@@ -1,9 +1,14 @@
 import "./globals.css";
-import { Rubik } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 export const dynamic = "force-dynamic";
 
-const rubik = Rubik({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["100", "300", "400", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "NextJs Ticket App",
@@ -13,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
