@@ -1,6 +1,9 @@
 import Link from "next/link";
+import EventList from "./EventList";
+import { Suspense } from "react";
+import Loading from "./loading";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main>
       <h2>Dashboard</h2>
@@ -13,7 +16,7 @@ export default function Home() {
       <div className="flex justify-center my-8">
         <Link href="/tickets">
           {" "}
-          <button className="btn-primary">View Tickets</button>
+          <button className="btn-primary">View Events</button>
         </Link>
       </div>
       <h2>Company Updates</h2>
@@ -35,6 +38,9 @@ export default function Home() {
           Dicta, qui!
         </p>
       </div>
+      <Suspense fallback={<Loading />}>
+        <EventList />
+      </Suspense>
     </main>
   );
 }
