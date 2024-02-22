@@ -20,8 +20,9 @@ export default function Navbar({ user }) {
         <h1>Lojo Helpdesk</h1>
       </Link>
       <Link href="/">Dashboard</Link>
-      <Link href="/tickets" className="mr-auto">
-        Tickets
+      <Link href="/tickets">Tickets</Link>
+      <Link href="/events" className="mr-auto">
+        Events
       </Link>
       {user && <span>Hello, {user.email}</span>}
 

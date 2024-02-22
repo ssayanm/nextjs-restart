@@ -1,5 +1,5 @@
 import Link from "next/link";
-import EventList from "./EventList";
+import EventList from "./events/EventList";
 import { Suspense } from "react";
 import Loading from "./loading";
 
@@ -8,16 +8,16 @@ export default async function Home() {
     <main>
       <h2>Dashboard</h2>
       <p className="mb-4">
-        Found a glitch on our website? Help us swat it away! Submit a "Bug
-        Ticket" here, like booking a movie ticket. Tell us what you saw, where
-        it happened, and if possible, add a screenshot.{" "}
+        Found a glitch on our website? Help us swat it away! Submit a &quot;Bug
+        Ticket&quot; here, like booking a movie ticket. Tell us what you saw,
+        where it happened, and if possible, add a screenshot.
       </p>
       <p>
         The clearer your report, the faster our tech heroes can fix it! Every
-        ticket helps make our site smoother for everyone. Plus, you'll earn
+        ticket helps make our site smoother for everyone. Plus, you&quot;ll earn
         badges for reporting bugs, climbing the leaderboard to become a top bug
-        squasher! So grab your virtual fly swatter and let's make this website
-        shine! ✨🪲
+        squasher! So grab your virtual fly swatter and let&quot;s make this
+        website shine! ✨🪲
       </p>
       <div className="flex justify-center my-8">
         <Link href="/tickets">
