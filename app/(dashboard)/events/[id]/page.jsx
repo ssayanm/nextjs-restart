@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
     .single();
 
   return {
-    title: `Lojo Helpdesk | ${event?.title || "Event not found"}`,
+    title: `Lojo Helpdesk | ${event ? event.title : "Event not found"}`,
   };
 }
 
@@ -50,9 +50,6 @@ export default async function EventDetails({ params }) {
         <h3>{event.title}</h3>
         <small>Created by {event.user_email}</small>
         <p>{event.body}</p>
-        <div className={`pill ${event.priority}`}>
-          {event.priority} priority
-        </div>
       </div>
     </main>
   );
