@@ -5,7 +5,7 @@ import Link from "next/link";
 import EventList from "./EventList";
 
 export const metadata = {
-  title: "Lojo Helpdesk | Tickets",
+  title: "Lojo Helpdesk | Events",
 };
 
 export default function page() {

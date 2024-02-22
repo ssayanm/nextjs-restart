@@ -13,11 +13,13 @@ async function getEvents() {
 
   return data;
 }
-export default async function EventList() {
+export default async function EventList({ limit = Infinity }) {
   const events = await getEvents();
+  const limitedEvents = limit === Infinity ? events : events.slice(0, limit);
+
   return (
     <>
-      {events.map((event) => (
+      {limitedEvents.map((event) => (
         <div key={event.id} className="card my-5">
           <Link href={`/events/${event.id}`}>
             <h3>{event.title}</h3>

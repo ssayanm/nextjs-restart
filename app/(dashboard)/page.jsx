@@ -28,7 +28,7 @@ export default async function Home() {
       <h2>Company Updates</h2>
 
       <Suspense fallback={<Loading />}>
-        <EventList />
+        <EventList limit={3} />
       </Suspense>
     </main>
   );
